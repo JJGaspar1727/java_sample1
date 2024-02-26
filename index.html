@@ -4,27 +4,29 @@
 <head>
     <title>Javascript Sample</title>
     <style>
-        /* css cascading style sheet*/
+
         #divContainer {
             text-align: center;
         }
-        /*class*/
+        
         .redText {
-            color: red;
-            background-color: aquamarine;
+            color: rgb(25, 0, 255);
+            background-color: rgb(170, 196, 170);
             margin: 1rem;
         }
         .redText:hover {
-            color:  blue;
+            color:  rgb(197, 197, 7);
 
-            background-color: green;
+            background-color: rgb(128, 0, 0);
         }
         div {
             margin-bottom: 1rem;
+            
             font-size: large;
         }
-
+        
     </style>
+
 </head>
 
 <body>
@@ -32,8 +34,20 @@
         <h1>Login</h1>
         <div><input type="text" placeholder="username" class="redText"> </div>
         <div><input type="password" placeholder="password" class="redText"> </div>
-        <div><button>Login</button></div>
+        <div><button id = buttonLogin>Login</button></div>
     </div>
 </body>
+<script>
+
+    alert ("Hello Mah Friend")
+
+    console.log("Hello Mah Friend", 1 + 1)
+
+    let buttonLogin = document.querySelector("#buttonLogin")
+    buttonLogin.onclick = function () {
+        alert("Login Successful")
+    }
+    
+</script>
 
 </html>
